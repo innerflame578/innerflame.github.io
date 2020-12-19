@@ -1,10 +1,52 @@
-<html>
+<head>
+
+
+
+
+    <link rel="stylesheet" href="style.css"> 
+    
+    <script src="C:\Users\manny\Downloads\script.js"></script>
+</head>
  
 <body>
   <h1>Manny</h1>
   <p>Welcome Niggas!</p>
-  <img src="https://nashvillesevereweather.com/wp-content/uploads/2019/10/17_giphy.gif" />
- <!--<img src =""/>-->
+  
+  <img id="icecream" onclick="boom()" src="https://media.giphy.com/media/L3WHyEbvMUBSIb6LLB/giphy.gif" width="400" height="418">
+
+
+  <img id="example" onclick="changeImage()" src="https://nashvillesevereweather.com/wp-content/uploads/2019/10/17_giphy.gif" width="400" height="418">
+
+  <script>
+  function changeImage()
+  {
+  element=document.getElementById('example')
+  if (element.src.match("out"))
+    {
+    element.src="https://nashvillesevereweather.com/wp-content/uploads/2019/10/17_giphy.gif";
+    }
+  else
+    {
+    element.src="https://media.giphy.com/media/hvGKQL8lasDvIlWRBC/giphy.gif";
+    }
+  }
+  function boom()
+  {
+  element=document.getElementById('icecream')
+  if (element.src.match("out"))
+    {
+    element.src="https://media.giphy.com/media/L3WHyEbvMUBSIb6LLB/giphy.gif";
+    }
+  else
+    {
+    element.src="https://media.giphy.com/media/146BUR1IHbM6zu/giphy.gif";
+    }
+  }
+  </script>
+  
+
+
+
 </body>
  
 </html>
